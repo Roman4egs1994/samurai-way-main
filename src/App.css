@@ -6,25 +6,12 @@
     "navG contentG";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
-    /*grid-gap: 10px;*/
 }
 
-.logotype {
-    width: 40px;
-    margin: 10px 0 0 10px
-}
 
-.header {
-    grid-area: headerG;
-    background-color: rgba(204, 203, 203, 0.76);
-}
 
-.nav {
-    grid-area: navG;
-    background-color: beige;
-}
 
-.content {
-    grid-area: contentG;
-    background-color: rgba(46, 154, 152, 0.76);
-}
+
+
+
+

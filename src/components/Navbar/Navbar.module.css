@@ -1,0 +1,16 @@
+.nav {
+    grid-area: navG;
+    background-color: #1f1f1f;
+    border-right: 1px solid rgba(172, 185, 84, 0.78);
+    border-bottom: 1px solid rgba(172, 185, 84, 0.78);
+}
+
+.item{
+    text-decoration: none;
+    color: #c7d933;
+    font-size: 20px;
+    font-weight: 600 ;
+    line-height: 40px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}

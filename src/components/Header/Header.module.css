@@ -1,0 +1,10 @@
+.header {
+    grid-area: headerG;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid rgba(172, 185, 84, 0.78);
+}
+
+.logotype {
+    width: 40px;
+    margin: 10px 0 0 10px
+}
