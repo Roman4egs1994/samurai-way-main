@@ -1,4 +1,47 @@
 .content {
     grid-area: contentG;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255)
+}
+
+.content img {
+    display: block;
+}
+
+.avatar img{
+    width: 170px;
+    margin: 10px 0 0 10px;
+    border-radius: 0.5em;
+}
+
+.descriptionProfile {
+    display: flex;
+    /*border-bottom: 1px solid rgba(172, 185, 84, 0.78);*/
+}
+
+.wrapper {
+   border-top:  1px solid rgba(172, 185, 84, 0.78);
+   border-bottom:  1px solid rgba(172, 185, 84, 0.78);
+    background-color: #1f1f1f;
+}
+
+.dataProfile {
+    margin-left: 2em;
+}
+
+.dataProfile  p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.dataProfile strong {
+    color: #c7d933;
+    margin-right: 0.3em;
+}
+
+.dataProfile h2 {
+    color: #c7d933;
+}
+
+.dataProfile a {
+    text-decoration: none;
+    color: rgba(242, 243, 244, 0.95);
 }
