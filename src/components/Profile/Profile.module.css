@@ -9,13 +9,18 @@
 
 .avatar img{
     width: 170px;
-    margin: 10px 0 0 10px;
+    margin: 15px 0 15px 10px;
     border-radius: 0.5em;
 }
 
 .descriptionProfile {
     display: flex;
+    background-color: #151515;
     /*border-bottom: 1px solid rgba(172, 185, 84, 0.78);*/
+}
+
+.descriptionProfile:hover {
+    background-color: rgba(21, 21, 21, 0.65);
 }
 
 .wrapper {

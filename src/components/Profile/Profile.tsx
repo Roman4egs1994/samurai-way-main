@@ -4,6 +4,12 @@ import Avatar from "./imgProfile/Avatar.png"
 import styleP from './Profile.module.css'
 import {MyPost} from "./MyPosts/MyPost";
 
+
+// type ProfileType = {
+//     name: string
+// }
+
+
 export const Profile = () => {
     return (
         <div className={styleP.content}>
@@ -17,7 +23,7 @@ export const Profile = () => {
                         <img src={Avatar} alt="avatar"/>
                     </div>
                     <div className={styleP.dataProfile}>
-                        <h2> Roman R</h2>
+                        <h2>Roman Rybkin</h2>
                         <p><strong>Date of Birth:</strong>  13 january</p>
                         <p><strong>Citi:</strong>   Ulyanovsk</p>
                         <p><strong>Web Site:</strong>  <a href="https://it-kamasutra.com">https://it-kamasutra.com</a></p>
