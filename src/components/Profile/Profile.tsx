@@ -1,5 +1,5 @@
 import React from "react";
-import mainLogo from "./imgProfile/main.png";
+// import mainLogo from "./imgProfile/main.png";
 import Avatar from "./imgProfile/Avatar.png"
 import styleP from './Profile.module.css'
 import {MyPost} from "./MyPosts/MyPost";
@@ -12,10 +12,11 @@ import {MyPost} from "./MyPosts/MyPost";
 
 export const Profile = () => {
     return (
-        <div className={styleP.content}>
-            <div>
-                <img  src={mainLogo} alt="Main Logo"/>
-            </div>
+        // <div className={styleP.content}>
+        <div>
+            {/*<div>*/}
+            {/*    <img  src={mainLogo} alt="Main Logo"/>*/}
+            {/*</div>*/}
 
             <div className={styleP.wrapper}>
                 <div className={styleP.descriptionProfile}>

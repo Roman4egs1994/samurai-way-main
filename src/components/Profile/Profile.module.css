@@ -1,11 +1,11 @@
-.content {
-    grid-area: contentG;
-    background-color: rgb(255, 255, 255)
-}
+/*.content {*/
+/*    grid-area: contentG;*/
+/*    background-color: rgb(255, 255, 255)*/
+/*}*/
 
-.content img {
-    display: block;
-}
+/*.content img {*/
+/*    display: block;*/
+/*}*/
 
 .avatar img{
     width: 170px;
