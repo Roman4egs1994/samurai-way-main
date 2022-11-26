@@ -1,0 +1,18 @@
+/*.dialogs {*/
+/*    display: grid;*/
+/*    grid-template-columns: 2fr 10fr;*/
+/*}*/
+
+.dialog{
+    padding-left: 10px;
+
+}
+
+.item {
+    color: #000000;
+    font-size: 18px;
+}
+
+.item .active {
+    color: aqua;
+}

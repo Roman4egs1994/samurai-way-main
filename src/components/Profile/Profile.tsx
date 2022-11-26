@@ -6,12 +6,24 @@ import {MyPost} from "./MyPosts/MyPost";
 import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
 
 
-export const Profile = () => {
+type ProfileType = {
+    posts: Array<PostPropsType>
+}
+
+type PostPropsType = {
+    id:number
+    message: string
+    likeCount: number
+}
+
+export const Profile = (props: ProfileType) => {
+
+
     return (
         <div>
             <div className={styleP.wrapper}>
                 <ProfileInfo/>
-                <MyPost/>
+                <MyPost posts = {props.posts}/>
             </div>
         </div>
     )

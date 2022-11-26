@@ -1,56 +1,29 @@
 import React from 'react';
 import styleDialogs from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
+import {DialogItem} from "./DialogItem/DialogItem";
+import {Message} from "./Message/Message";
+import {DialogsPropsType, MessagesPropsType} from "../../App";
 
-
-type  DialogPropsType = {
-    name: string
-    id: number
-}
-
-type DialogItemPropsType = {
-    name: string
-    id: number
-}
-
-type MessagePropsType = {
-    message: string
+type DialogsType = {
+    dialogs: Array<DialogsPropsType>
+    messages: Array<MessagesPropsType>
 }
 
 
-const DialogItem = (props: DialogItemPropsType) => {
 
-    let path = "/dialogs/" + props.id;
-
-    return (
-        <div className={styleDialogs.dialog + " " + styleDialogs.active}>
-            <NavLink to={path}>{props.name}</NavLink>
-        </div>
-    )
-}
+export const Dialogs = (props: DialogsType) => {
 
 
-const Message = (props: MessagePropsType) => {
-    return (
-        <div className={styleDialogs.message}>{props.message}</div>
-    )
-}
+        let dialogsElements = props.dialogs.map(el => <DialogItem key={el.id} name={el.name} id={el.id}/>)
+        let messagesElements = props.messages.map(el => <Message key={el.id} message={el.message}/>)
 
-
-export const Dialogs = (props: DialogPropsType) => {
         return (
             <div className={styleDialogs.dialogs}>
                 <div className={styleDialogs.dialogItems}>
-                    <DialogItem name={'Julia'} id={1}/>
-                    <DialogItem name={'Maks'} id={2}/>
-                    <DialogItem name={'KirillG'} id={3}/>
-                    <DialogItem name={'KirillK'} id={4}/>
-                    <DialogItem name={'Sergei'} id={5}/>
+                    {dialogsElements}
                 </div>
-                <div className={styleDialogs.messages}>
-                    <Message message={'hi'}/>
-                    <Message message={'How us your it-kamasutra'}/>
-                    <Message message={'Hello brother. How do you do?'}/>
+                <div>
+                    {messagesElements}
                 </div>
             </div>
         );

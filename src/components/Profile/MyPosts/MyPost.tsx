@@ -4,20 +4,33 @@ import {Post} from "./Post/Post";
 import avatar from './img/Avatar.png'
 import like from './img/like.svg'
 
+type MyPostProps = {
+    posts: Array<PostsTypeProps>
+}
 
-export const MyPost = () => {
+type PostsTypeProps = {
+    id: number
+    message: string
+    likeCount: number
+}
+
+
+export const MyPost = (props: MyPostProps) => {
+
+
+    let postsElements = props.posts.map(el=><Post key={el.id} avatar={avatar} message = {el.message} like={like}/> )
+
     return (
         <div>
-            {/*<div className={styleMyPost.post}>*/}
-            {/*    <p className={styleMyPost.descrP}>My Post:</p>*/}
-            {/*    <div className={styleMyPost.areaBlock}>*/}
-            {/*        <textarea  className={styleMyPost.area}></textarea>*/}
-            {/*        <button className={styleMyPost.btnAdd}>Add post</button>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className={styleMyPost.post}>
+                <p className={styleMyPost.descrP}>My Post:</p>
+                <div className={styleMyPost.areaBlock}>
+                    <textarea  className={styleMyPost.area}></textarea>
+                    <button className={styleMyPost.btnAdd}>Add post</button>
+                </div>
+            </div>
            <div>
-               <Post avatar={avatar} message = {'Hi, how you?  Hi, how you? Hi, how you?' } like={like}/>
-               <Post avatar={avatar} message = {"It's my firs post"} like={like}/>
+               {postsElements}
            </div>
         </div>
     )

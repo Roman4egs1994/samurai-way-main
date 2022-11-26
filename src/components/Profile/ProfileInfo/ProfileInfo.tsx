@@ -18,7 +18,6 @@ export const ProfileInfo = () => {
                     <p><strong>Web Site:</strong> <a href="https://it-kamasutra.com">https://it-kamasutra.com</a></p>
                 </div>
             </div>
-
         </div>
     )
 }

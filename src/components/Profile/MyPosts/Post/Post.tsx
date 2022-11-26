@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styleMyPost from './Post.module.css'
 
 
+
 type PostType = {
     message: string
     avatar: string
